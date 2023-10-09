@@ -34,7 +34,7 @@ public class CameraPriceComparison {
         double maxDif = 0.0;
         String maxDiffManufacturer = manufacturers[0];
         for (int i = 0; i < numManufacturers; i++) {
-            System.out.println(manufacturers[i] + "\t\t" + finalPrices[i][0] + "\t\t" + finalPrices[i][1]);
+            System.out.println(manufacturers[i] + "\t\t" + finalPrices[i][0] + "\t\t" + finalPrices[i][1]); // depending on the size of the console this might break but in my video I show it perfectly formatted
             double dif = parsePrice(finalPrices[i][0]) - parsePrice(finalPrices[i][1]);
             if (maxDif < dif) {
                 maxDif = dif;
